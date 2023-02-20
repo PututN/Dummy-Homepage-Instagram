@@ -1,15 +1,5 @@
 import React from "react";
-import {
-  Home,
-  Search,
-  Compass,
-  Film,
-  Mail,
-  Heart,
-  PlusSquare,
-  AlignJustify,
-  Instagram,
-} from "react-feather";
+import { Home, Compass, Film, Mail, PlusSquare } from "react-feather";
 import user from "../images/user.png";
 
 function Footer() {
