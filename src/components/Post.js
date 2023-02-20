@@ -11,10 +11,11 @@ import {
 
 function Post() {
   return (
-    <div className="px-10 py-5 w-full">
+    <div className="lg:px-10 md:px-20 px-3 lg:py-5 pb-10 w-full">
       <div className="flex flex-row justify-between items-center">
         <div className="flex items-center gap-3">
           <img
+            alt="profile"
             src={user}
             height={50}
             width={50}
@@ -35,7 +36,9 @@ function Post() {
         </div>
       </div>
       <div className="mt-5">
-        <img src={user} height={326} width={326} />
+        <div className="flex items-center justify-center">
+          <img alt="profile" src={user} height={326} width={326} />
+        </div>
         <div className="flex justify-between items-center mt-3">
           <div className="flex gap-3 items-center">
             <Heart />
