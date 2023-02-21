@@ -29,7 +29,7 @@ function Navbar() {
 
   return (
     <>
-      <div className="block md:hidden fixed w-full px-5 py-2 border-b-2 border-b-gray-400 bg-white">
+      <div className="block md:hidden fixed w-full px-5 py-2 border-b-2 border-b-gray-400 bg-white z-50">
         <div className="flex justify-between items-center">
           <Instagram />
           <div className="relative">
