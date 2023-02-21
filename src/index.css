@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
+
+@layer base {
+    @font-face {
+        font-family: 'billabong';
+        src: url('./assets/fonts/billabong.ttf') format('ttf');
+    }  
+}
+
 @tailwind utilities;
