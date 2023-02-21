@@ -10,7 +10,7 @@ function Main() {
     <div className="relative">
       <div className="flex">
         <Navbar />
-        <div className="xl:w-1/4 w-1/12 md:block hidden"></div>
+        <div className="xl:w-1/4 w-[10%] md:block hidden"></div>
         <div className="lg:w-1/2 w-full md:mt-0 mt-7">
           <Story />
           <Post />
