@@ -22,34 +22,34 @@ function Story() {
           <div className="gap-5 flex">
             {story.map((item) => {
               return (
-                <button
+                <div
                   key={item.id}
-                  className="flex flex-col justify-center items-center"
+                  className="flex flex-col justify-center items-center cursor-pointer"
                 >
                   <img
                     alt="profile"
                     src={item.picture}
-                    className="rounded-full border-2 border-red-500 p-1 object-cover h-14 w-14"
+                    className="rounded-full border-2 border-red-500 p-1 object-cover md:h-14 h-12 md:w-14 w-12"
                   />
                   <div>
                     {item.userName.length >= 8
                       ? `${item.userName.slice(0, 5)}...`
                       : item.userName}
                   </div>
-                </button>
+                </div>
               );
             })}
           </div>
         ) : (
-          <div className="animate-pulse flex space-x-4">
-            <div className="rounded-full bg-slate-200 h-14 w-14"></div>
-            <div className="rounded-full bg-slate-200 h-14 w-14"></div>
-            <div className="rounded-full bg-slate-200 h-14 w-14"></div>
-            <div className="rounded-full bg-slate-200 h-14 w-14"></div>
-            <div className="rounded-full bg-slate-200 h-14 w-14"></div>
-            <div className="rounded-full bg-slate-200 h-14 w-14"></div>
-            <div className="rounded-full bg-slate-200 h-14 w-14"></div>
-            <div className="rounded-full bg-slate-200 h-14 w-14"></div>
+          <div className="animate-pulse flex space-x-4 w-full">
+            <div className="rounded-full bg-slate-200 md:h-14 h-12 md:w-14 w-12"></div>
+            <div className="rounded-full bg-slate-200 md:h-14 h-12 md:w-14 w-12"></div>
+            <div className="rounded-full bg-slate-200 md:h-14 h-12 md:w-14 w-12"></div>
+            <div className="rounded-full bg-slate-200 md:h-14 h-12 md:w-14 w-12"></div>
+            <div className="rounded-full bg-slate-200 md:h-14 h-12 md:w-14 w-12"></div>
+            <div className="rounded-full bg-slate-200 md:h-14 h-12 md:w-14 w-12"></div>
+            <div className="rounded-full bg-slate-200 md:h-14 h-12 md:w-14 w-12"></div>
+            <div className="rounded-full bg-slate-200 md:h-14 h-12 md:w-14 w-12"></div>
           </div>
         )}
       </div>
