@@ -41,16 +41,18 @@ function Post() {
           <div key={String(index)}>
             <div className="flex flex-row justify-between items-center mt-5">
               <div className="flex items-center gap-3">
-                <img
-                  alt="profile"
-                  src={item.caption.from.profile_picture}
-                  className="rounded-full border-2 border-red-500 p-1 object-contain h-14 w-14"
-                />
+                <button>
+                  <img
+                    alt="profile"
+                    src={item.caption.from.profile_picture}
+                    className="rounded-full border-2 border-red-500 p-1 object-contain h-14 w-14"
+                  />
+                </button>
                 <div className="gap-3">
                   <div className="flex gap-3">
-                    <div className="font-bold">
+                    <button className="font-bold">
                       {item.caption.from.username}
-                    </div>
+                    </button>
                     <div className="gap-3 text-gray-400">
                       <span className="mr-3">•</span>
                       {moment(
@@ -101,7 +103,7 @@ function Post() {
                 </button>
               </div>
               {userLoved.includes(index) ? (
-                <div className="mt-2">
+                <button className="mt-2">
                   You and Liked by{" "}
                   <span className="font-bold">{item.liked_post[0]}</span> and{" "}
                   <span className="font-bold">
@@ -110,9 +112,9 @@ function Post() {
                       : item.liked_post.length}{" "}
                     Others
                   </span>
-                </div>
+                </button>
               ) : (
-                <div className="mt-2">
+                <button className="mt-2">
                   Liked by{" "}
                   <span className="font-bold">{item.liked_post[0]}</span> and{" "}
                   <span className="font-bold">
@@ -121,13 +123,52 @@ function Post() {
                       : item.liked_post.length}{" "}
                     Others
                   </span>
-                </div>
+                </button>
               )}
               <div className="mt-2">
-                <span className="font-bold">{item.caption.from.username} </span>
+                <button className="font-bold">
+                  {item.caption.from.username}{" "}
+                </button>{" "}
                 {item.caption.text}
               </div>
-              <div className="text-gray-400">View all {item.comment.length} comments</div>
+              {item.comment.length === 0 ? (
+                <div className="my-2 text-gray-400 font-semibold">
+                  no one has left a comment yet
+                </div>
+              ) : (
+                <>
+                  <button className="text-gray-400">
+                    View all {item.comment.length} comments
+                  </button>
+
+                  <div className="my-2 flex items-center gap-3">
+                    <div className="flex-1 flex gap-3">
+                      <button>
+                        <img
+                          alt="profile"
+                          src={item.comment[0].picture}
+                          className="rounded-full object-contain h-8 w-8"
+                        />
+                      </button>
+                      <div className="gap-3">
+                        <button className="font-bold">
+                          {item.comment[0].userName}
+                        </button>{" "}
+                        {item.comment[0].text}
+                      </div>
+                    </div>
+                    <div className="text-gray-400">
+                      {moment(
+                        item.comment[0].createdAt
+                          .split("T")[0]
+                          .split("-")
+                          .join(""),
+                        "YYYYMMDD"
+                      ).fromNow()}
+                    </div>
+                  </div>
+                </>
+              )}
               <div className="relative">
                 <input
                   type="text"
