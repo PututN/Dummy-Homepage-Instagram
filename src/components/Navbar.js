@@ -10,7 +10,7 @@ import {
   AlignJustify,
   Instagram,
 } from "react-feather";
-// import user from "../images/user.png";
+import user from "../images/user.png";
 import http from "../helpers/http";
 
 function Navbar() {
@@ -79,7 +79,7 @@ function Navbar() {
             <div className="flex gap-5 mt-5">
               <img
                 alt="profile"
-                src={profile.picture}
+                src={profile.picture ? profile.picture : user}
                 className="rounded-full object-contain h-6 w-6"
               ></img>
               <div className="xl:block hidden">Profile</div>

@@ -16,7 +16,7 @@ function Story() {
   }, []);
 
   return (
-    <div className="lg:px-10 md:px-20 px-3 lg:py-5 pt-10 pb-4 w-full overflow-x-scroll">
+    <div className="container lg:px-10 md:px-20 px-3 lg:py-5 pt-10 pb-4 w-full overflow-x-scroll">
       <div className="gap-5 flex">
         {story.map((item) => {
           return (

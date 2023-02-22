@@ -8,7 +8,7 @@
         "attribution": null,
         "tags": [],
         "type": "image",
-        "location": null,
+        "location": "Sleman, Yogyakarta",
         "filter": "Normal",
         "created_time": "2023-02-21T16:41:41+07:00",
         "link": "https://instagram.com/p/6zeBG2H1oH/",
@@ -26,6 +26,7 @@
           "id": "1059322357729942165"
         },
         "user_has_liked": false,
+        "liked_post": ["AnggaDj", "YogiKys", "Gagyian", "Budiarman"],
         "id": "1059322354827483655_1547627005",
         "user": {
           "username": "beingsalmankhan",
@@ -38,7 +39,7 @@
         "attribution": null,
         "tags": [],
         "type": "image",
-        "location": null,
+        "location": "Indonesia",
         "filter": "Normal",
         "created_time": "2023-02-17T16:41:41+07:00",
         "link": "https://instagram.com/p/6zay6yBWhr/",
@@ -56,6 +57,7 @@
           "id": "1059308188572412119"
         },
         "user_has_liked": false,
+        "liked_post": ["YogiKys", "Gagyian", "Budiarman"],
         "id": "1059308185661565035_23275345",
         "user": {
           "username": "carinstagram",
@@ -68,7 +70,7 @@
         "attribution": null,
         "tags": ["thehuntingpartytour"],
         "type": "image",
-        "location": null,
+        "location": "Jakarta, Indonesia",
         "filter": "Normal",
         "created_time": "2023-02-11T16:41:41+07:00",
         "link": "https://instagram.com/p/6ze2yyi4eV/",
@@ -86,6 +88,7 @@
           "id": "1059326047021663524"
         },
         "user_has_liked": false,
+        "liked_post": ["Gagyian", "Budiarman"],
         "id": "1059326044144371605_4890736",
         "user": {
           "username": "linkinpark",
@@ -116,6 +119,7 @@
           "id": "1059274169221954465"
         },
         "user_has_liked": false,
+        "liked_post": ["Budiarman", "AnggaDj", "YogiKys", "Gagyian", "Bangao"],
         "id": "1059273174265936414_7563629",
         "user": {
           "username": "sert_mehmet",
@@ -130,7 +134,7 @@
         "type": "image",
         "location": null,
         "filter": "Normal",
-        "created_time": "2023-02-20T16:41:41+07:00",
+        "created_time": "2023-01-20T16:41:41+07:00",
         "link": "https://instagram.com/p/6zfwHMEXBY/",
         "images": "https://res.cloudinary.com/dc5ywapd9/image/upload/v1676971279/Asignment/Screenshot_2023-02-21_162102_grkl6z.jpg",
         "users_in_photo": [],
@@ -146,6 +150,7 @@
           "id": "1059329986589192786"
         },
         "user_has_liked": false,
+        "liked_post": ["AnggaDj", "YogiKys", "Gagyian", "Budiarman"],
         "id": "1059329983057588312_194146115",
         "user": {
           "username": "jiffpom",
