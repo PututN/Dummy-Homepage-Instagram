@@ -45,7 +45,7 @@ function Post() {
                   <img
                     alt="profile"
                     src={item.caption.from.profile_picture}
-                    className="rounded-full border-2 border-red-500 p-1 object-contain h-14 w-14"
+                    className="rounded-full border-2 border-red-500 p-1 object-cover h-14 w-14"
                   />
                 </button>
                 <div className="gap-3">
@@ -147,7 +147,7 @@ function Post() {
                         <img
                           alt="profile"
                           src={item.comment[0].picture}
-                          className="rounded-full object-contain h-8 w-8"
+                          className="rounded-full object-cover h-8 w-8"
                         />
                       </button>
                       <div className="gap-3">

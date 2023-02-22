@@ -35,13 +35,11 @@ function RightHomepage() {
       <div className="mb-5">
         <div className="flex items-center gap-3">
           {profile.picture ? (
-            <button>
-              <img
-                alt="profile"
-                src={profile?.picture}
-                className="rounded-full border-2 border-red-500 p-1 object-contain h-14 w-14"
-              />
-            </button>
+            <img
+              alt="profile"
+              src={profile?.picture}
+              className="rounded-full border-2 border-red-500 p-1 object-contain h-14 w-14 cursor-pointer"
+            />
           ) : (
             <div className="animate-pulse flex space-x-4">
               <div className="rounded-full bg-slate-200 h-14 w-14"></div>
@@ -78,13 +76,11 @@ function RightHomepage() {
             return (
               <div className="flex items-center gap-3" key={item.id}>
                 {item.picture ? (
-                  <button>
-                    <img
-                      alt="profile"
-                      src={item.picture ? item.picture : user}
-                      className="rounded-full border-2 border-red-500 p-1 object-contain h-14 w-14"
-                    />
-                  </button>
+                  <img
+                    alt="profile"
+                    src={item.picture ? item.picture : user}
+                    className="rounded-full border-2 border-red-500 p-1 object-contain h-14 w-14 cursor-pointer"
+                  />
                 ) : (
                   <div className="animate-pulse flex space-x-4">
                     <div className="rounded-full bg-slate-200 h-14 w-14"></div>

@@ -29,7 +29,7 @@ function Story() {
                   <img
                     alt="profile"
                     src={item.picture}
-                    className="rounded-full border-2 border-red-500 p-1 object-contain h-14 w-14"
+                    className="rounded-full border-2 border-red-500 p-1 object-cover h-14 w-14"
                   />
                   <div>
                     {item.userName.length >= 8
