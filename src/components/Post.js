@@ -123,10 +123,11 @@ function Post() {
                   </span>
                 </div>
               )}
-              <div className="my-2">
+              <div className="mt-2">
                 <span className="font-bold">{item.caption.from.username} </span>
                 {item.caption.text}
               </div>
+              <div className="text-gray-400">View all {item.comment.length} comments</div>
               <div className="relative">
                 <input
                   type="text"
