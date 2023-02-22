@@ -34,6 +34,20 @@ function Post() {
     }
   };
 
+  const shareData = {
+    title: "Frontend Assignment",
+    text: "Share post",
+    url: "https://developer.mozilla.org",
+  };
+
+  const handleShare = async (id) => {
+    try {
+      await navigator.share(shareData);
+      alert(`Share post success with id ${id}`);
+    } catch (err) {
+      console.log(err);
+    }
+  };
   return (
     <div className="lg:px-10 md:px-20 px-3 lg:py-5 pb-10 w-full">
       {data.map((item, index) => {
@@ -45,7 +59,7 @@ function Post() {
                   <img
                     alt="profile"
                     src={item.caption.from.profile_picture}
-                    className="rounded-full border-2 border-red-500 p-1 object-cover h-14 w-14"
+                    className="rounded-full border-2 border-red-500 p-1 object-contain h-14 w-14"
                   />
                 </button>
                 <div className="gap-3">
@@ -90,7 +104,7 @@ function Post() {
                   <button>
                     <MessageCircle />
                   </button>
-                  <button>
+                  <button onClick={() => handleShare(item.id)}>
                     <Send />
                   </button>
                 </div>
@@ -143,13 +157,13 @@ function Post() {
 
                   <div className="my-2 flex items-center gap-3">
                     <div className="flex-1 flex gap-3">
-                      <button>
+                      <div className="h-8 w-8">
                         <img
                           alt="profile"
                           src={item.comment[0].picture}
-                          className="rounded-full object-cover h-8 w-8"
+                          className="rounded-full object-contain h-8 w-8 cursor-pointer"
                         />
-                      </button>
+                      </div>
                       <div className="gap-3">
                         <button className="font-bold">
                           {item.comment[0].userName}
