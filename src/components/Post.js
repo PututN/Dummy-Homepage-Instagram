@@ -62,7 +62,6 @@ function Post() {
       console.log(err);
     }
   };
-
   const [text, setText] = React.useState("");
 
   const handleComment = async (e, text, index) => {
